@@ -9,3 +9,7 @@
 ## [0.0.3] - 4/8/2020
 
 * Greatly simplified the expected output
+
+## [0.0.4] - 4/8/2020
+
+* Changed how this builds to build to source instead of cache
