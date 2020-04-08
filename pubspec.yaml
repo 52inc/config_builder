@@ -1,4 +1,4 @@
-name: config_builder
+name: json_config_builder
 description: A builder to create a configuration dart file from a json spec
 homepage: https://github.com/52inc/config_builder
 repository: https://github.com/52inc/config_builder

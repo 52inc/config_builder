@@ -4,7 +4,7 @@ import 'package:build/build.dart';
 import 'package:dart_style/dart_style.dart';
 import 'package:meta/meta.dart';
 
-Builder configBuilder(BuilderOptions options) => ConfigBuilder();
+Builder jsonConfigBuilder(BuilderOptions options) => ConfigBuilder();
 
 const classHeader = '''
 /// FILE GENERATED! DO NOT TOUCH! 

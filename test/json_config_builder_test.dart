@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:config_builder/config_builder.dart';
+import 'package:json_config_builder/json_config_builder.dart';
 import 'package:test/test.dart';
 
 const example = '''
