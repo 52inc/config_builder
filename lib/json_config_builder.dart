@@ -17,7 +17,7 @@ class ConfigBuilder extends Builder {
 
   @override
   Map<String, List<String>> get buildExtensions =>
-      const <String, List<String>>{'.config.json' : <String>['.config.dart', '.dart']};
+      const <String, List<String>>{'.json' : <String>['.dart']};
 
   @override
   FutureOr<void> build(BuildStep buildStep) async {
@@ -40,11 +40,7 @@ class ConfigBuilder extends Builder {
     }
 
     await buildStep.writeAsString(outputId, outputString);
-    await buildStep.writeAsString(AssetId(buildStep.inputId.package, "config.dart"),
-    "export ${outputId.path}${outputId.extension};");
   }
-
-
 }
 
 @visibleForTesting

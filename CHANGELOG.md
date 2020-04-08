@@ -5,3 +5,7 @@
 ## [0.0.2] - 4/8/2020
 
 * Adjusting how the code get's generated
+
+## [0.0.3] - 4/8/2020
+
+* Greatly simplified the expected output
