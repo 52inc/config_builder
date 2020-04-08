@@ -3,6 +3,6 @@ builders:
     import: "package:json_config_builder/json_config_builder.dart"
     builder_factories:
       - "jsonConfigBuilder"
-    build_extensions: {".config.json": [".dart"]}
+    build_extensions: {".config.json": [".config.dart", ".dart"]}
     auto_apply: root_package
     build_to: cache
