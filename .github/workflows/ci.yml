@@ -1,0 +1,32 @@
+name: Test & Publish
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    container:
+      image:  google/dart:latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: pub get
+    - name: Run tests
+      run: pub run test
+  
+  publish:
+    runs-on: ubuntu-latest
+    needs: [test]
+    
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Publish Package
+        uses: k-paxian/dart-package-publisher@master
+        with:
+          credentialJson: ${{ secrets.CREDENTIAL_JSON }}

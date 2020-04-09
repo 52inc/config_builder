@@ -33,5 +33,5 @@ name: example
 ...
 
 builders:
-  config_builder: ^0.0.1
+  json_config_builder: ^0.0.4
 ```
