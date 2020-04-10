@@ -3,7 +3,7 @@ description: A builder to create a configuration dart file from a json spec
 homepage: https://github.com/52inc/config_builder
 repository: https://github.com/52inc/config_builder
 issue_tracker: https://github.com/52inc/config_builder/issues
-version: 0.0.5
+version: 0.0.6
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

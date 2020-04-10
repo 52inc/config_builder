@@ -5,3 +5,4 @@ builders:
       - "jsonConfigBuilder"
     build_extensions: {".json": [".dart"]}
     auto_apply: root_package
+    build_to: source

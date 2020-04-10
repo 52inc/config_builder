@@ -17,3 +17,7 @@
 ## [0.0.5] - 4/9/2020
 
 * Eased up the dependency on build_config to prevent flutter_tool conflicts.
+
+## [0.0.6] - 4/10/2020
+
+* Changed build_to to 'source' to avoid missing generated file issues
